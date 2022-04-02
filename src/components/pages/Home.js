@@ -3,6 +3,7 @@ import BannerContainer from "../BannerContainer";
 import ExclusiveSection from "../ExclusiveSection";
 import HeroSection from "../HeroSection";
 import { NavBar } from "../NavBar";
+import ServicesContainer from "../ServicesContainer";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <BannerContainer />
       <ExclusiveSection />
       <HeroSection />
+      <ServicesContainer />
     </>
   );
 };

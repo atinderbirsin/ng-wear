@@ -1,5 +1,11 @@
 import React from "react";
-import { Nav, NavbarContainer, NavLinks, NavLogo } from "./NavbarElements";
+import {
+  Nav,
+  NavbarContainer,
+  NavLinks,
+  NavLogo,
+  Icon,
+} from "./NavbarElements";
 import Logo from "../images/logooo.webp";
 
 export function NavBar() {
@@ -15,12 +21,13 @@ export function NavBar() {
             <NavLogo src={Logo} />
           </NavLinks>
           <NavLinks to="/">
-            SWEAT WIKI &nbsp; <i class="fa-solid fa-angle-down"></i>
+            SWEAT WIKI &nbsp; <Icon className="fa-solid fa-angle-down" />
           </NavLinks>
           <NavLinks to="/">BLOG</NavLinks>
           <NavLinks to="/">MY ACCOUNT</NavLinks>
           <NavLinks to="/">
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <Icon className="fa-solid fa-magnifying-glass" />
+            {/* <i class="fa-solid fa-magnifying-glass"></i> */}
           </NavLinks>
         </NavbarContainer>
       </Nav>

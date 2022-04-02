@@ -47,6 +47,7 @@ const HeroSection = () => {
               frameborder="0"
               height="270"
               title="Youtube Video"
+              allowfullscreen
             />
             <HeroIFrameDescription>
               Functions of NGwear undershirt

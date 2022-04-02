@@ -29,3 +29,5 @@ export const NavLinks = styled(Link)`
 export const NavLogo = styled.img`
   width: 100%;
 `;
+
+export const Icon = styled.i``;

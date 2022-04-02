@@ -1,4 +1,5 @@
 import React from "react";
+import { Icon } from "../NavBar/NavbarElements";
 import {
   BannerSection,
   BannerImg,
@@ -35,7 +36,7 @@ const BannerContainer = () => {
             <Btn>
               <ButtonLink to="/">SHOP NOW </ButtonLink>
               <BtnIcon>
-                <i class="fa-solid fa-chevron-right"></i>
+                <Icon className="fa-solid fa-chevron-right" />
               </BtnIcon>
             </Btn>
           </ButtonContainer>
