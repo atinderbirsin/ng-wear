@@ -1,12 +1,22 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import bannerImg from "../images/banner.jpg";
 
 export const BannerSection = styled.div`
   width: 100%;
+  height: 56.8rem;
+  overflow: hidden;
 `;
 
-export const BannerImg = styled.img`
-  max-width: 100%;
+// export const BannerImg = styled.img`
+//   max-width: 144rem;
+// `;
+
+export const BannerImg = styled.div`
+  background-image: url(${bannerImg});
+  height: 56.9rem;
+  background-repeat: no-repeat;
+  background-size: cover;
 `;
 
 export const BannerTextContainer = styled.div`

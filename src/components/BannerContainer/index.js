@@ -11,16 +11,14 @@ import {
   BtnIcon,
   ButtonLink,
 } from "./BannerElements";
-import bannerImg from "../images/banner.jpg";
+// import bannerImg from "../images/banner.jpg";
 
 const BannerContainer = () => {
-  window.addEventListener("scroll", () => {
-    console.log("Scrolling");
-  });
   return (
     <>
       <BannerSection>
-        <BannerImg src={bannerImg} alt="banner" />
+        {/* <BannerImg src={bannerImg} alt="banner" /> */}
+        <BannerImg />
         <BannerTextContainer>
           <BannerDiv>
             <BannerHeading>
