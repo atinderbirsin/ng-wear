@@ -8,8 +8,6 @@ import {
   BannerHeading,
   BannerText,
   ButtonContainer,
-  Btn,
-  BtnIcon,
   ButtonLink,
 } from "./BannerElements";
 // import bannerImg from "../images/banner.jpg";
@@ -33,7 +31,12 @@ const BannerContainer = () => {
             </BannerText>
           </BannerDiv>
           <ButtonContainer>
-            <ButtonLink to="/" color backgroundcolor radius>
+            <ButtonLink
+              to="/"
+              color="true"
+              backgroundcolor="true"
+              radius="true"
+            >
               SHOP NOW
               <Icon className="fa-solid fa-chevron-right" />
             </ButtonLink>

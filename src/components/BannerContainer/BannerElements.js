@@ -52,6 +52,7 @@ export const ButtonContainer = styled.div`
 `;
 
 export const ButtonLink = styled(Link)`
+  display: inline-block;
   text-decoration: none;
   padding: 0.8rem 1.6rem;
   background-color: ${(props) =>
@@ -59,10 +60,13 @@ export const ButtonLink = styled(Link)`
   border: ${(props) => (props.border ? "2px solid rgb(0, 102, 153)" : "none")};
   border-radius: ${(props) => (props.radius ? "0.5rem" : "0.3rem")};
   font-size: 1.9rem;
+  border-color: ${(props) =>
+    props.bordercolor ? "#fff" : "2px solid rgb(0, 102, 153)"};
   font-weight: 300;
   color: ${(props) => (props.color ? "#fff" : "rgb(0, 102, 153)")};
   cursor: pointer;
   font-weight: ${(props) => (props.border ? "500" : "300")};
+  width: ${(props) => (props.width ? "100%" : "")};
   transition: all 0.3s ease;
 
   ${Icon} {
@@ -73,7 +77,7 @@ export const ButtonLink = styled(Link)`
   &:hover {
     padding-right: 3.2rem;
     background-color: ${(props) =>
-      props.hoverShadow ? "rgba(0, 0, 0, 0.05)" : "none"};
+      props.hovershadow ? "rgba(0, 0, 0, 0.05)" : "none"};
 
     ${Icon} {
       opacity: 1;

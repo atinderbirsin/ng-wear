@@ -15,7 +15,6 @@ import {
   Price,
   StrikeThrough,
   BtnContainer,
-  Button,
   Overlay,
 } from "./CardsElements";
 import crewneck from "../images/CREWNECK.webp";
@@ -45,7 +44,7 @@ const CardsContainer = () => {
               <CardImg src={crewneck} alt="Product" />
               <SaleText>Sale!</SaleText>
               <Icon className="fa-solid fa-circle-plus" />
-              <Overlay color />
+              <Overlay />
             </CardImgContainer>
             <ProductName>SLIM FIT - CREWNECK</ProductName>
             <Rating>
@@ -112,7 +111,7 @@ const CardsContainer = () => {
         </CardsGridContainer>
 
         <BtnContainer>
-          <ButtonLink to="/" border hoverShadow>
+          <ButtonLink to="/" border="true" hovershadow="true">
             EXPLORE ALL <Icon className="fa-solid fa-chevron-right icon" />
           </ButtonLink>
         </BtnContainer>

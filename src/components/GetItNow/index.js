@@ -27,7 +27,7 @@ function GetElement() {
             outer garments. The fabric is super-absorbent and will prevent sweat
             from penetrating your clothes.
           </Text>
-          <ButtonLink to="/" border>
+          <ButtonLink to="/" border="true">
             BUY NOW <Icon className="fa-solid fa-chevron-right icon" />
           </ButtonLink>
         </Container>

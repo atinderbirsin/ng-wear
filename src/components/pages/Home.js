@@ -8,6 +8,7 @@ import ServicesContainer from "../ServicesContainer";
 import HeroSection from "../HeroSection";
 import Hero from "../HeroContainer";
 import GetElement from "../GetItNow";
+import Subscribe from "../Subscribe";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <HeroSection />
       <Hero />
       <GetElement />
+      <Subscribe />
     </>
   );
 };
