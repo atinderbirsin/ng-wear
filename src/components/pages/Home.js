@@ -9,6 +9,7 @@ import HeroSection from "../HeroSection";
 import Hero from "../HeroContainer";
 import GetElement from "../GetItNow";
 import Subscribe from "../Subscribe";
+import Testimonials from "../testimonials";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       <Hero />
       <GetElement />
       <Subscribe />
+      <Testimonials />
     </>
   );
 };

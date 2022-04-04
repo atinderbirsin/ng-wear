@@ -1,6 +1,5 @@
 import React from "react";
 import { Field, reduxForm } from "redux-form";
-import { ButtonLink } from "../BannerContainer/BannerElements";
 
 const Form = (props) => {
   const onFormSubmit = (formValues) => {

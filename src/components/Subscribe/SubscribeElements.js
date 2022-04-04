@@ -31,4 +31,25 @@ export const FormContainer = styled.div`
   padding: 2.5rem;
 `;
 
-export const FormButton = styled(ButtonLink)``;
+export const FormButton = styled(ButtonLink)`
+  border: none;
+  box-shadow: 0px 0px 0px 2px white;
+  border-radius: 0.1rem;
+`;
+
+export const Button = styled.button`
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-radius: 0.1rem;
+
+  &:hover {
+    background: #3985ad;
+    border-radius: 0.1rem;
+
+    ${FormButton} {
+      border: none;
+      box-shadow: 0px 0px 0px 3px rgb(57 133 173);
+    }
+  }
+`;

@@ -7,10 +7,15 @@ import {
   FormHeading,
   FormText,
   FormContainer,
+  Button,
   FormButton,
 } from "./SubscribeElements";
 
 function Subscribe() {
+  const submit = (formValues) => {
+    console.log(formValues);
+  };
+
   return (
     <>
       <Div>
@@ -21,17 +26,19 @@ function Subscribe() {
             TEES GUARANTEED TO BLOCK 100% OF UNDERARM SWEAT!
           </FormText>
           <FormContainer>
-            <Form />
-            <FormButton
-              to="/"
-              color="true"
-              border="true"
-              bordercolor="true"
-              width="true"
-            >
-              SUBSCRIBE
-              <Icon className="fa-solid fa-chevron-right" />
-            </FormButton>
+            <Form onSubmit={submit} />
+            <Button>
+              <FormButton
+                to="/"
+                color="true"
+                border="true"
+                bordercolor="true"
+                width="true"
+              >
+                SUBSCRIBE
+                <Icon className="fa-solid fa-chevron-right" />
+              </FormButton>
+            </Button>
           </FormContainer>
         </InnerDiv>
       </Div>
