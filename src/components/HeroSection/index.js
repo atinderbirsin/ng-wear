@@ -1,59 +1,49 @@
 import React from "react";
+import AdvancedTechnology from "../images/Advanced-Technology.webp";
 import {
   HeroContainer,
-  Container,
-  HeroHeading,
-  HeroSubHeading,
-  HeroFlexContainer,
+  HeroFlexDiv,
+  HeroImgBox,
+  HeroImg,
   HeroTextBox,
+  HeroTextBoxHeading,
   HeroText,
-  HeroVideoBox,
-  HeroIFrame,
-  HeroIFrameDescription,
 } from "./HeroElements";
 
 const HeroSection = () => {
   return (
     <>
-      <HeroContainer>
-        <Container>
-          <HeroHeading>Restrained by the“Rain” Under Your Arms?</HeroHeading>
-          <HeroSubHeading>
-            Break Free & Lift Your Arms with Confidence as High as You Like,
-            Whenever you Feel Like it!
-          </HeroSubHeading>
-        </Container>
-        <HeroFlexContainer>
+      <HeroContainer primary>
+        <HeroFlexDiv>
+          <HeroImgBox>
+            <HeroImg src={AdvancedTechnology} alt="Hero Img" />
+          </HeroImgBox>
           <HeroTextBox>
+            <HeroTextBoxHeading>Advanced Technology</HeroTextBoxHeading>
             <HeroText>
-              Excessive sweat can easily cause you to lose focus during your
-              day; it can take a toll on your work and social life, which is why
-              you should switch to sweat proof undershirts from NGwear. Our
-              super absorbent undershirts are sweat proof, which means you can
-              enjoy your work and social gatherings with complete confidence.
+              You may wonder why these shirts are so effective, and the answer
+              lies in our advanced technology. The innovative technology used to
+              make these sweat proof undershirts not only prevents sweat from
+              getting on to your clothes, but it also helps to regulate your
+              body temperature. These sweat proof shirts make use of a silver
+              infused fabric, which helps to keep your body warm in cold
+              temperatures and absorb heat in hot temperatures. This is a great
+              advantage as you will stay fresh and dry all day long.
             </HeroText>
             <HeroText>
-              Made from breathable, flexible and odor neutralizing micro modal
-              fabric, our high-quality undershirts are ideal for people who
-              sweat as a result of high temperatures or health conditions such
-              as hyperhidrosis. You’ll be fresh and dry all day long – you can
-              wear your favorite shirts again without worrying about any sweat
-              marks.
+              The level of comfort of our undershirts is simply amazing as it is
+              made of silky smooth material that does not irritate the skin. Due
+              to the high-quality material that we use in these high-quality
+              sweat-proof shirts, you can easily wear it underneath any other
+              outer garment without it showing. Due to the versatile nature of
+              these undershirts, you can wear them on any occasion, day or
+              night. You can wear them with casual shirts, or formal wear with a
+              suit and tie, and still be completely comfortable. It also offers
+              a slim fit, and as such, you can choose a shirt that fits you
+              perfectly.
             </HeroText>
           </HeroTextBox>
-          <HeroVideoBox>
-            <HeroIFrame
-              src="https://www.youtube.com/embed/z4VyqitFAjs"
-              frameborder="0"
-              height="270"
-              title="Youtube Video"
-              allowfullscreen
-            />
-            <HeroIFrameDescription>
-              Functions of NGwear undershirt
-            </HeroIFrameDescription>
-          </HeroVideoBox>
-        </HeroFlexContainer>
+        </HeroFlexDiv>
       </HeroContainer>
     </>
   );

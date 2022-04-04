@@ -33,12 +33,10 @@ const BannerContainer = () => {
             </BannerText>
           </BannerDiv>
           <ButtonContainer>
-            <Btn>
-              <ButtonLink to="/">SHOP NOW </ButtonLink>
-              <BtnIcon>
-                <Icon className="fa-solid fa-chevron-right" />
-              </BtnIcon>
-            </Btn>
+            <ButtonLink to="/" color backgroundcolor radius>
+              SHOP NOW
+              <Icon className="fa-solid fa-chevron-right" />
+            </ButtonLink>
           </ButtonContainer>
         </BannerTextContainer>
       </BannerSection>

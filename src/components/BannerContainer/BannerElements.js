@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import bannerImg from "../images/banner.jpg";
+import { Icon } from "../NavBar/NavbarElements";
 
 export const BannerSection = styled.div`
   width: 100%;
@@ -50,50 +51,35 @@ export const ButtonContainer = styled.div`
   position: relative;
 `;
 
-export const BtnIcon = styled.span`
-  font-size: 1.9rem;
-  width: 0;
-  background: #028be4;
-  -webkit-transition: all 0.8s ease;
-  -moz-transition: all 0.8s ease;
-  -ms-transition: all 0.8s ease;
-  -o-transition: all 0.8s ease;
-  -webkit-transition: all 0.8s ease;
-  transition: all 0.8s ease;
-  color: white;
-  position: absolute;
-  top: 0;
-  right: 20px;
-  opacity: 0;
-`;
-
 export const ButtonLink = styled(Link)`
   text-decoration: none;
-  padding: 0.8rem 2rem;
-  background-color: #028be4;
-  border-radius: 0.5rem;
+  padding: 0.8rem 1.6rem;
+  background-color: ${(props) =>
+    props.backgroundcolor ? "#028be4" : "transparent"};
+  border: ${(props) => (props.border ? "2px solid rgb(0, 102, 153)" : "none")};
+  border-radius: ${(props) => (props.radius ? "0.5rem" : "0.3rem")};
   font-size: 1.9rem;
   font-weight: 300;
-  color: #fff;
-  transition: all 0.5s;
-`;
+  color: ${(props) => (props.color ? "#fff" : "rgb(0, 102, 153)")};
+  cursor: pointer;
+  font-weight: ${(props) => (props.border ? "500" : "300")};
+  transition: all 0.3s ease;
 
-export const Btn = styled.div`
-  width: 100%;
+  ${Icon} {
+    opacity: 0;
+    width: 0;
+  }
 
   &:hover {
-    ${ButtonLink} {
-      padding: 0.8rem 3.5rem 0.8rem 2rem;
-      margin: -1rem;
-    }
+    padding-right: 3.2rem;
+    background-color: ${(props) =>
+      props.hoverShadow ? "rgba(0, 0, 0, 0.05)" : "none"};
 
-    ${BtnIcon} {
+    ${Icon} {
       opacity: 1;
-      width: 1rem;
-      position: absolute;
-      top: 0;
-      right: 4px;
-      transition: all 0.5s;
+      width: auto;
+      transform: translateX(15px);
+      transition: all 0.4s ease;
     }
   }
 `;
